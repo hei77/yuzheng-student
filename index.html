@@ -543,7 +543,7 @@
                     `;
                   // 如果pptLink存在，渲染PPT链接，并且加上class="ppt"
                   if (item.pptLink[index]) {
-                    groupDiv.innerHTML += `<div class="ppt"><a href="${item.pptLink[index]}" target="_blank">PPT</a></div>`;
+                    groupDiv.innerHTML += `<div class="ppt"><a href="${item.pptLink[index]}" download target="_blank">PPT</a></div>`;
                   } else {
                     // 如果没有pptLink，仍然显示PPT区域，但不应用class="ppt"样式
                     groupDiv.innerHTML += `<div class="no-ppt">PPT</div>`;
