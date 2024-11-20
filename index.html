@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>个人主页</title>
+  <link rel="stylesheet" href="css\index.css" />
+  <link href="layui\css\layui.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="blue-background"></div>
+  <div class="content">
+    <div class="info">
+      <img class="profile-photo" src="./static/imgs/avatar_user__1459291366-360x360.jpg" alt="profile-photo" />
+      <h1>Yu Zheng</h1>
+      <h2>
+        Vice President of JD.COM<br />
+        and Chief Data Scientist of JD Technology<br />
+        IEEE Fellow, ACM Distinguished Scientist<br />
+      </h2>
+      <h3>Contact Info</h3>
+      <div class="particulars">
+        <div class="icon">
+          <div class="icon-box">
+            <svg t="1731051806310" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              p-id="4916" width="18" height="18">
+              <path
+                d="M893.842 217.557H130.159c-16.261 0-29.443 13.182-29.443 29.443v530c0 16.261 13.182 29.443 29.443 29.443h763.683c16.261 0 29.443-13.183 29.443-29.443V247c0-16.261-13.182-29.443-29.443-29.443z m-85.584 58.886L512 507.651 215.742 276.443h592.516zM159.602 747.557v-440.23l334.283 260.885A29.4 29.4 0 0 0 512 574.443a29.4 29.4 0 0 0 18.115-6.231l334.283-260.884v440.229H159.602z"
+                fill="" p-id="4917"></path>
+            </svg>
+            <a href="mailto:msyuzheng@outlook.com"> Email </a>
+          </div>
+          <div class="icon-box">
+            <svg t="1731052270972" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              p-id="7362" width="18" height="18">
+              <path
+                d="M957.06 511.84c0 246.74-200.15 446.76-447 446.76S63 758.58 63 511.84 263.13 65.09 510 65.09s447.06 200.02 447.06 446.75z m-81.28 0c0-201.56-164.07-365.52-365.76-365.52s-365.75 164-365.75 365.52S308.33 877.37 510 877.37s365.78-163.96 365.78-365.53z"
+                fill="#707070" p-id="7363"></path>
+              <path
+                d="M713.22 511.84c0 246.74-91 446.76-203.2 446.76s-203.19-200-203.19-446.76S397.8 65.09 510 65.09s203.22 200.02 203.22 446.75z m-81.28 0c0-237.41-86.52-365.52-121.92-365.52S388.1 274.43 388.1 511.84 474.62 877.37 510 877.37s121.94-128.11 121.94-365.53z"
+                fill="#707070" p-id="7364"></path>
+              <path d="M144.27 308.78h731.51v81.23H144.27zM144.27 593.07h731.51v81.23H144.27z" fill="#707070"
+                p-id="7365"></path>
+            </svg>
+            <a href="http://scholar.google.com.hk/citations?hl=en&amp;user=juUcdgYAAAAJ&amp;view_op=list_works">
+              Google Scholar
+            </a>
+          </div>
+          <div class="icon-box">
+            <svg t="1731052365555" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              p-id="8550" width="18" height="18">
+              <path
+                d="M224 149.28a75.2 75.2 0 0 0-79.04 80A75.04 75.04 0 0 0 224 307.36a76.96 76.96 0 0 0 80-78.4 76.96 76.96 0 0 0-80-79.68zM878.72 874.72V575.04c0-148.8-74.08-216.96-172.96-216.96a176 176 0 0 0-149.28 80h-3.04l-6.88-69.12H416c1.92 44.48 4 98.08 4 161.12v344.64h150.24V583.36A112 112 0 0 1 576 544a80 80 0 0 1 76-58.88c54.4 0 76.16 44.48 76.16 109.6v280zM149.28 369.44h150.24v505.28H149.28z"
+                fill="#515151" p-id="8551"></path>
+            </svg>
+            <a href="https://www.linkedin.com/in/yu-zheng-7483642?trk=hp-identity-name">
+              LinkedIn
+            </a>
+          </div>
+          <div class="icon-box">
+            <svg t="1731052270972" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              p-id="7362" width="18" height="18">
+              <path
+                d="M957.06 511.84c0 246.74-200.15 446.76-447 446.76S63 758.58 63 511.84 263.13 65.09 510 65.09s447.06 200.02 447.06 446.75z m-81.28 0c0-201.56-164.07-365.52-365.76-365.52s-365.75 164-365.75 365.52S308.33 877.37 510 877.37s365.78-163.96 365.78-365.53z"
+                fill="#707070" p-id="7363"></path>
+              <path
+                d="M713.22 511.84c0 246.74-91 446.76-203.2 446.76s-203.19-200-203.19-446.76S397.8 65.09 510 65.09s203.22 200.02 203.22 446.75z m-81.28 0c0-237.41-86.52-365.52-121.92-365.52S388.1 274.43 388.1 511.84 474.62 877.37 510 877.37s121.94-128.11 121.94-365.53z"
+                fill="#707070" p-id="7364"></path>
+              <path d="M144.27 308.78h731.51v81.23H144.27zM144.27 593.07h731.51v81.23H144.27z" fill="#707070"
+                p-id="7365"></path>
+            </svg>
+            <a href="http://urban-computing.com/pdf/YuZheng-CV_2018.pdf">
+              Website
+            </a>
+          </div>
+        </div>
+        <h5>
+          郑宇 博士，教授，IEEE Fellow<br />
+          国家万人计划科技创新领军人才<br />
+          享受国务院特殊津贴专家<br />
+          京东集团副总裁<br />
+          京东城市总裁<br />
+          京东智能城市研究院院长
+        </h5>
+      </div>
+    </div>
+    <div class="view">
+      <div class="navbar">
+        <a class="nav-item nav active" id="nav-article">必读文章</a>
+        <div class="divider"></div>
+        <a class="nav-item nav" id="nav-video">必看视频</a>
+        <div class="divider"></div>
+        <a class="nav-item nav" id="nav-PPT">必看报告</a>
+      </div>
+
+      <div class="toolbar" id="article-toolbar">
+        <button id="sort-by-recommendation">按推荐阅读顺序排序</button>
+        <button id="sort-by-date">按发表时间排序</button>
+        <button id="sort-by-language">按论文名称排序</button>
+      </div>
+      <div class="article details active" id="article">
+        <ul id="article-list" class="new_article"></ul>
+      </div>
+
+      <div class="video details" id="video">
+        <h2>必看视频</h2>
+        <!-- 视频列表容器 -->
+        <div class="video-container" id="video-container">
+          <!-- 视频项将通过 JS 动态生成 -->
+        </div>
+
+      </div>
+      <!-- 必看报告容器 -->
+      <div class="PPT details" id="PPT">
+        <h2>2024</h2>
+        <div class="new">
+          <ul>
+            <li class="item">
+              <a href="#" class="title"><span>1</span>公共数据要素智能构建技术和高效流通方法</a>
+              <div class="main">
+                <div class="image"></div>
+                <div class="box">
+                  <div class="body">
+                    <div class="msg">
+                      <div class="author">CNCC 2024</div>
+                      <div class="place">浙江省东阳市，中国</div>
+                      <div class="type">论坛报告</div>
+                      <div class="date">2024.10.25</div>
+                      <div class="ppt">PPT</div>
+                    </div>
+                    <div class="msg">
+                      <div class="author">CNCC 2024</div>
+                      <div class="place">北京理工大学</div>
+                      <div class="type">论坛报告</div>
+                      <div class="date">日期</div>
+                      <div class="ppt">PPT</div>
+                    </div>
+                  </div>
+                  <div class="abstract">
+                    <p>
+                      数据要素对于推动经济增长、优化资源配置、提升产业链现代化水平具有重要的意义。各级党政机关、企事业单位产生的公共数据覆盖面宽、应用场景丰富，具备良好的工作基础。因此，公共数据的要素化成为了数据要素工作的战略重心。要实现这一战略目标，需要业务、技术和机制的协同创新。本报告介绍公共数据要素的三部曲，分别从业务架构、底层技术和运行机制三个方面支撑公共数据要素的构建和流通。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <script src="layui\layui.js"></script>
+      <script>
+        // 封装菜单点击逻辑的函数
+        function initMenuNavigation() {
+          // 获取所有导航元素和内容区域
+          const navItems = document.querySelectorAll(
+            ".navbar .nav, .navbar .language"
+          );
+          const detailsSections = document.querySelectorAll(".details");
+
+          // 为每个菜单项添加点击事件
+          navItems.forEach((item) => {
+            item.addEventListener("click", () => {
+              // 去除所有菜单项的高亮，并隐藏所有内容区域
+              navItems.forEach((nav) => nav.classList.remove("active"));
+              detailsSections.forEach((section) =>
+                section.classList.remove("active")
+              );
+
+              // 高亮当前点击的菜单项
+              item.classList.add("active");
+
+              // 显示对应内容区域
+              const targetId = item.id.replace("nav-", "");
+              const targetSection = document.getElementById(targetId);
+              if (targetSection) targetSection.classList.add("active");
+            });
+          });
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+          const data = [
+            { username: "数据科学家", authors: ["郑宇"], date: "2021", extraInfo: "17(12)", page: "43-49", link: "./static/articles/0. 数据科学家.pdf", source: "中国计算机学会通讯", type: "期刊论文", langType: 0 },
+            { username: "城市计算：用大数据和AI驱动智能城市", authors: ["郑宇"], date: "2018", extraInfo: "14(1)", page: "8-17", link: "./static/articles/1. 城市计算：用大数据和AI驱动智能城市，中国计算机学会通讯，2018.1.pdf", source: "中国计算机学会通讯", type: "期刊论文", langType: 0 },
+            { username: "智能城市操作系统", authors: ["郑宇"], date: "2020", extraInfo: "16(12)", page: "39-44", link: "./static/articles/2. 智能城市操作系统，中国计算机学会通讯，2020.12.pdf", source: "中国计算机学会通讯", type: "期刊论文", langType: 0 },
+            { username: "城市知识体系", authors: ["郑宇"], date: "2022", extraInfo: "48(1)", page: "1-16", link: "./static/articles/3. 城市知识体系_郑宇.pdf", source: "武汉大学学报·信息科学版", type: "期刊论文", langType: 0 },
+            { username: "城市感知体系", authors: ["郑宇"], date: "2024", extraInfo: "49(10)", page: "1770-1787", link: "./static/articles/4. 城市感知体系-武大学报.pdf", source: "武汉大学学报·信息科学版", type: "期刊论文", langType: 0 },
+            { username: "基于城市知识体系的公共数据要素构建技术", authors: ["郑宇, 易修文, 齐德康, 等"], date: "2024", extraInfo: "10(4)", page: "130-148", link: "./static/articles/5. 基于城市知识体系的公共数据要素构建技术-2024-07-15-24077.pdf", source: "大数据", type: "期刊论文", langType: 0 },
+            { username: "城市治理一网统管", authors: ["郑宇"], date: "2022", extraInfo: "47(1)", page: "19-25", link: "./static/articles/6. 城市治理一网统管.pdf", source: "武汉大学学报·信息科学版", type: "期刊论文", langType: 0 },
+            { username: "政民互通：构建政府和居民之间的双向信息通道", authors: ["郑宇"], date: "2024", extraInfo: "10(1)", page: "127-140", link: "./static/articles/7. 政民互通：构建政府和居民之间的双向信息通道-Big Data Research.pdf", source: "大数据", type: "期刊论文", langType: 0 },
+            { username: "Detecting collective anomalies from multiple spatio-temporal datasets across different domains", authors: ["Yu Zheng, Huichu Zhang, Yong Yu"], date: "2015", extraInfo: "10(1)", page: "127-140", link: "./static/articles/Collective anomalies-GIS2015_yu.pdf", source: "ACM SIGSPATIAL 2015", type: "Conference Paper", ppt: "https://example.com/ppt1", langType: 1 },
+            { username: "Diagnosing New York city's noises with ubiquitous data", authors: ["Yu Zheng, Tong Liu, Yilun Wang,et al"], date: "2014", link: "./static/articles/Diagnosing NYC's noise using ubiquitious data-yu.pdf", source: "UbiComp 2014", type: "Conference Paper", ppt: "https://example.com/ppt2", langType: 1 },
+            { username: "Driving with knowledge from the physical world", authors: ["Jing Yuan, Yu Zheng, Xing Xie,et al"], date: "2011", link: "./static/articles/Driving with Knowledge from the Physical World-kdd11.pdf", source: "KDD 2011", type: "Conference Paper", ppt: "https://example.com/ppt3", langType: 1 },
+            { username: "Forecasting fine-grained air quality based on big data", authors: ["Yu Zheng, Xiuwen Yi, Ming Li,et al"], date: "2015", link: "./static/articles/Forecasting air qualtiy-kdd2015-camera-ready.pdf", source: "KDD 2015", type: "Conference Paper", ppt: "https://example.com/ppt4" },
+            { username: "Inferring gas consumption and pollution emission of vehicles throughout a city", authors: ["Jingbo Shang, Yu Zheng, Wenzhu Tong,et al"], date: "2014", link: "./static/articles/frp0542-zheng-final.pdf", source: "KDD 2014", type: "Conference Paper", ppt: "https://example.com/ppt5", langType: 1 },
+            { username: "Travel time estimation of a path using sparse trajectories", authors: ["Yilun Wang, Yu Zheng, Yexiang Xue"], date: "2014", link: "./static/articles/frp0557-zheng1.pdf", source: "KDD 2014", type: "Conference Paper", ppt: "https://example.com/ppt6", langType: 1 },
+            { username: "U-air: When urban air quality inference meets big data", authors: ["Yu Zheng, Furui Liu, Hsun-Ping Hsieh"], date: "2013", link: "./static/articles/kdd51-zheng.pdf", source: "KDD 2013", type: "Conference Paper", ppt: "https://example.com/ppt7", langType: 1 },
+            { username: "Discovering regions of different functions in a city using human mobility and POIs", authors: ["Jing Yuan, Yu Zheng, Xing Xie"], date: "2012", link: "./static/articles/kdd2012_functional regions.pdf", source: "KDD 2012", type: "Conference Paper", ppt: "https://example.com/ppt8", langType: 1 },
+            { username: "Methodologies for cross-domain data fusion: An overview", authors: ["Yu Zheng"], date: "2015", extraInfo: "1(1)", page: "16-34", link: "./static/articles/Methods for Cross-Domain Data fusion.pdf", source: "IEEE TBD", type: "Journal Paper", langType: 1 },
+            { username: "Trajectory data mining: an overview", authors: ["Yu Zheng"], date: "2015", extraInfo: "6(3)", page: "1-41", link: "./static/articles/TrajectoryDataMining-tist-yuzheng.pdf", source: "ACM TIST", type: "Journal Paper", langType: 1 },
+          ];
+          const toolbar = document.getElementById("article-toolbar");
+          const articleTab = document.getElementById("nav-article");
+          const videoTab = document.getElementById("nav-video");
+          const pptTab = document.getElementById("nav-PPT");
+
+          // 导航点击事件
+          const navItems = document.querySelectorAll(".nav-item");
+          navItems.forEach((item) => {
+            item.addEventListener("click", () => {
+              navItems.forEach((nav) => nav.classList.remove("active")); // 移除所有激活状态
+              item.classList.add("active"); // 添加当前激活状态
+
+              if (item.id === "nav-article") {
+                toolbar.style.display = "block"; // 仅在必读文章显示按钮
+              } else {
+                toolbar.style.display = "none"; // 隐藏按钮
+              }
+            });
+          });
+          // 根据日期排序（降序）
+          function sortByDate(data) {
+            return [...data].sort((a, b) => {
+              const yearA = parseInt(a.date.split(",")[0]);
+              const yearB = parseInt(b.date.split(",")[0]);
+              return yearB - yearA;
+            });
+          }
+
+          // 按中英文排序（中文在前）
+          function sortByLanguage(data) {
+            return [...data].sort((a, b) => a.langType - b.langType);
+          }
+
+          // 渲染文章列表
+          function renderList(data) {
+            const articleList = document.getElementById("article-list");
+            articleList.innerHTML = "";
+            data.forEach((item, index) => {
+              const listItem = document.createElement("li");
+              listItem.className = "item";
+              // 处理作者名：加粗“郑宇”或“Yu Zheng”
+              const authorsHtml = item.authors
+                .map((authorGroup) => {
+                  // 拆分多个作者
+                  const authors = authorGroup.split(/[,，]/).map((a) => a.trim());
+                  return authors
+                    .map((author) => {
+                      const isTargetAuthor =
+                        author === "郑宇" || author.toLowerCase() === "yu zheng";
+                      return isTargetAuthor
+                        ? `<strong>${author}</strong>`
+                        : author;
+                    })
+                    .join(", ");
+                })
+                .join(", ");
+              const dateInfo = `${item.date}`;
+              const pptHtml = item.ppt
+                ? `<a href="${item.ppt}" target="_blank" style="color:#0060ac; text-decoration: none;">PPT</a>`
+                : "";
+              listItem.innerHTML = `
+  <span>${index + 1}</span>
+  <div class="body">
+    <div class="header">
+      <a href="${item.link}" target="_blank" class="title" style="color:#0060ac; font-size: calc(20.9px + 0.22vw); font-weight: 700;">
+        ${item.username}
+      </a>
+    </div>
+    <div class="main">
+      <div class="row">
+        <div class="name">${item.source}</div>
+        <div class="num">${item.extraInfo || ''}</div>
+        <div class="page">${item.page || ''}</div>
+        <div class="year">${dateInfo}</div>
+        <div class="type">${item.type}</div>
+      </div>
+      <div class="row">
+        <div class="author">${authorsHtml}</div>
+        <div class="ppt">${pptHtml}</div>
+      </div>
+    </div>
+  </div>
+`;
+
+              articleList.appendChild(listItem);
+            });
+          }
+
+          // 初始化数据展示
+          renderList(data);
+
+          // 按钮绑定事件
+          document.getElementById("sort-by-date").addEventListener("click", () => renderList(sortByDate(data)));
+          document.getElementById("sort-by-language").addEventListener("click", () => renderList(sortByLanguage(data)));
+          document.getElementById("sort-by-recommendation").addEventListener("click", () => renderList(data)); // 默认顺序
+        });
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+          const rawData = [
+            {
+              "username": "我们的大学·西南交通大学",
+              "date": "2018-10-07",
+              "link": "https://tv.cctv.com/2018/10/07/VIDEpjRe6UJmkyAzfshDGQRk181007.shtml",
+              "thumbnail": "./static/imgs/百家讲坛.png",
+              "description": "2018年10月7日 • CCTV百家讲坛官方频道\n简介：视频 25:54 西南交通大学1997级校友郑宇部分：了解自己的重要性。节目主要内容：巍巍学府，煌煌上庠，交通天下，经略八荒。西南交通大学的前身是中国第一所工程高等学府，中国土木工程、交通工程、矿冶工程高等教育的发祥地，“交通大学”最早两大源头之一。"
+            },
+            {
+              "username": "KEYNOTE PANEL",
+              "date": "2019-08-08",
+              "link": "https://www.youtube.com/watch?v=zi1PWENcItc",
+              "thumbnail": "./static/imgs/KDD 2019 - KEYNOTE PANEL - Full.png",
+              "description": "2019年8月8日 • KDD 2019\nBrief introduction：Plenary Keynote Panel: Why,What And How of Democratization of Data Science"
+            },
+            {
+              "username": "Innovators Under 35: Yu Zheng, Lead Researcher, Microsoft Research Asia",
+              "date": "2013-11-08",
+              "link": "https://www.youtube.com/watch?v=TQOrZfgHmQY",
+              "thumbnail": "./static/imgs/Innovators Under 35： Yu Zheng, Lead Researcher, Microsoft Research Asia.png",
+              "description": "2013年11月8日 • MIT Technology Review\nBrief introduction：Analyzing newly available data about the intricacies of urban life could make cities better."
+            },
+            {
+              "username": "Roundtable Discussion: Connected Cities",
+              "date": "2013-11-09",
+              "link": "https://www.youtube.com/watch?v=6YcHzPXhT88",
+              "thumbnail": "./static/imgs/圆桌会议.png",
+              "description": "2013年11月9日 • MIT Technology Review\nBrief introduction：A roundtable discussion with the Connected cities track speakers."
+            },
+            {
+              "username": "京东集团副总裁郑宇谈智慧城市：做好便民服务要打通多方数据并高效使用",
+              "date": "2021-09-26",
+              "link": "https://v.qq.com/x/cover/mzc00200sisy3t9/v3278gi4w1t.html",
+              "thumbnail": "./static/imgs/新京报 2021.png",
+              "description": "2021年9月26日 • 新京报\n简介：京东集团副总裁郑宇表示，做好便民服务或提供精准预测，需要对城市状态进行感知，汇集数据并高效使用。郑宇以空气质量预测为例谈智慧城市在日常生活中的应用，他说，预测空气质量不光需要空气质量数据本身，还需要结合气象、交通流、房屋密度等数据，打通这些数据，才能精准预测不同地方污染程度，使得政府决策避免“一刀切”，百姓生活也有精细化指导。"
+            },
+            {
+              "username": "郑宇：城市计算让生活更智能",
+              "date": "2017-08-27",
+              "link": "https://www.bilibili.com/video/BV1bx41187HE/",
+              "thumbnail": "./static/imgs/《未来简说》郑宇： 城市计算 让生活更智能.png",
+              "description": "2017年8月27日 • 未来简说\n简介：听听微软亚洲研究院的资深研究员——郑宇博士，为我们讲述人工智能和大数据如何让我们未来的城市生活更智能。在2002年汤姆·克鲁斯主演的《少数派报告》中，出现了无人驾驶汽车和磁悬浮道路系统，速度快且永远没有拥堵。由于清洁能源的使用，城市也变得更加洁净无污染。虽然这些都是科幻电影中的场景，但我们现在的生活就已经充满了人工智能带来的改变。"
+            },
+            {
+              "username": "Urban Computing: Building Intelligent Cities Using Big Data and AI",
+              "date": "2019-02-01",
+              "link": "https://vimeo.com/313942000",
+              "thumbnail": "./static/imgs/AAAI.png",
+              "description": "2019年2月1日 • AAAI-19/IAAI-19\nBrief introduction：This talk presents the vision of urban computing, demonstrating how AI technology helps to build intelligent cities. A series of AI-driven applications, such as location selection for business, forecasting air and water quality, and reducing energy consumption are also introduced in this talk. More information can be found through the website: http://icity.jd.com/."
+            },
+
+          ];
+          const MAX_DESCRIPTION_LENGTH = 200; // 限制描述的最大长度
+
+          function renderVideos(data) {
+            const videoContainer = document.getElementById('video-container');
+            videoContainer.innerHTML = ''; // 清空当前的视频列表
+
+            data.forEach(video => {
+              const videoItem = document.createElement('div');
+              videoItem.classList.add('video-item', 'tile');
+
+              // 左边图片
+              const videoLeft = document.createElement('div');
+              videoLeft.classList.add('video-left');
+              const img = document.createElement('img');
+              img.src = video.thumbnail;
+              img.alt = video.username;
+              videoLeft.appendChild(img);
+
+              // 右边文本内容
+              const videoRight = document.createElement('div');
+              videoRight.classList.add('video-right');
+              const title = document.createElement('h3');
+              title.textContent = video.username;
+
+              // 描述部分
+              const description = document.createElement('p');
+              if (video.description.length > MAX_DESCRIPTION_LENGTH) {
+                description.textContent = video.description.substring(0, MAX_DESCRIPTION_LENGTH) + '... ';
+
+                const moreLink = document.createElement('a');
+                moreLink.href = '#';
+                moreLink.textContent = '更多';
+                moreLink.style.color = "#007bff";
+                moreLink.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  description.textContent = video.description; // 展开完整描述
+                });
+
+                description.appendChild(moreLink);
+              } else {
+                description.textContent = video.description;
+              }
+
+              // 链接按钮
+              const link = document.createElement('a');
+              link.href = video.link;
+              link.target = '_blank';
+              link.textContent = '观看视频';
+
+              // 将内容添加到视频项
+              videoRight.appendChild(title);
+              videoRight.appendChild(description);
+              videoRight.appendChild(link);
+
+              // 将左边和右边的内容加入视频项
+              videoItem.appendChild(videoLeft);
+              videoItem.appendChild(videoRight);
+
+              // 将视频项加入视频容器
+              videoContainer.appendChild(videoItem);
+            });
+          }
+          // 对数据按日期倒序排序
+          rawData.sort((a, b) => new Date(b.date) - new Date(a.date));
+          // 初始渲染所有视频
+          renderVideos(rawData);
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+          const pptData = [
+            {
+              year: "2024",
+              items: [
+                {
+                  title: "G/B端产品经理",
+                  link: ["./static/ppt/GB端产品经理.pptx"],
+                  author: ["G/B端产品经理学习"],
+                  pptLink: ["./static/ppt/GB端产品经理.pptx"],
+                  date: ["2024.11.19"],
+                  kind: ["职业经历分享"],
+                  location: ["北京亦庄"],
+                  imgLink: "./static/imgs/GB端产品经理.png",
+                  description: "摘要：聚焦产品经理在复杂场景中的核心职责，强调把握行业趋势、深挖问题根因、区分客户与用户需求，通过精准定位和功能设计，统一客户价值与用户体验；结合案例分析任务体系设计与技术架构，提供从需求到落地再到运营的全流程指导。"
+                },
+                {
+                  title: "公共数据要素智能构建技术和高效流通方法",
+                  link: ["https://www.ccf.org.cn/Media_list/cncc/2024-11-14/834312.shtml", ""],
+                  author: ["CNCC2024 | 第七届智慧城市与城市计算论坛", "京东云峰会"],
+                  pptLink: ["./static/ppt/公共数据要素构建方法-2024-11-19.pdf", ""],
+                  date: ["2024.10.25", "2024.7.30"],
+                  kind: ["论坛报告", "大会报告"],
+                  location: ["浙江省东阳市横店圆明新园", "上海浦东嘉里大酒店"],
+                  imgLink: "./static/imgs/公共数据要素智能构建技术和高效流通方法.png",
+                  description: "摘要：数据要素对于推动经济增长、优化资源配置、提升产业链现代化水平具有重要的意义。各级党政机关、企事业单位产生的公共数据覆盖面宽、应用场景丰富，具备良好的工作基础。因此，公共数据的要素化成为了数据要素工作的战略重心。要实现这一战略目标，需要业务、技术和机制的协同创新。本报告介绍公共数据要素的三部曲，分别从业务架构、底层技术和运行机制三个方面支撑公共数据要素的构建和流通。"
+                },
+                {
+                  title: "规划精彩大学生涯，锻造科技强国人才",
+                  link: ["https://xyb.swjtu.edu.cn/info/1881/36382.htm", "https://scai.swjtu.edu.cn/web/page-newsDetail.html?nid=a701b505-b9cb-44a3-bb66-187a52b03c17"],
+                  author: ["铸将计划高阶训练讲座", "‘计’续情缘，‘智’创未来—优秀校友访谈活动"],
+                  pptLink: ["./static/ppt/规划精彩大学生涯、锻造科技强国人才-2024-09-24.pdf", ""],
+                  date: ["2024.10.18", "2024.9.25"],
+                  kind: ["专题讲座", "专题讲座"],
+                  location: ["西南交通大学九里校区", "西南交通大学犀浦校区"],
+                  imgLink: "/static/imgs/规划精彩大学生涯，锻造科技强国人才.png",
+                  description: "摘要：面向科技背景的本科生、研究生和博士生。探讨本科、硕士、博士和工作初期大家可能遇到的困惑，基于对个人成长经历的思考，为大家提供借鉴。通过科研实践和社团活动等多种方式，培养综合实力，提升认知能力、创新能力、沟通能力、组织能力等，最终成为一名有情怀，有理想有能力的科技人才，为中华民族的伟大复兴助力。"
+                },
+                {
+                  title: "数据科学家",
+                  link: ["https://cs.bjtu.edu.cn//jdxw/202314031.htm"],
+                  author: ["AI+交通”人才培养高端论坛"],
+                  pptLink: ["./static/ppt/数据科学家-20240921-25min.pptx"],
+                  date: ["2024.9.21"],
+                  kind: ["论坛报告"],
+                  location: ["北京交通大学科学会堂"],
+                  imgLink: "/static/imgs/数据科学家.png",
+                  description: "摘要：“AI+交通”，这一创新的组合正重塑着交通行业的未来。从智能交通管理到自动驾驶技术，从交通大数据分析到交通设施的智能化运维，如何培养出既精通人工智能技术，又熟悉交通行业需求的复合型人才，是我们亟待解决的重要课题。"
+                },
+                {
+                  title: "AI大模型在数字城市领域的应用和思考",
+                  link: ["https://scai.swjtu.edu.cn/web/page-newsDetail.html?nid=c78bc45e-e4ab-48d2-af07-e026229ef768", "https://conf.ccf.org.cn/web/html7/TYMB.html?channelId=8a9e362c8f131348018f2e84b0740070&superChannel=8a9e362c8eb74fe8018ec8b6324200b5&globalId=m1153800034500874240169512896479"],
+                  author: ["KDD China 2024 Summer School", "CCDM 2024 | 时空智能计算论坛"],
+                  pptLink: ["./static/ppt/AI大模型在数字城市领域的探索和思考-2024-09-22-30min.pdf", ""],
+                  date: ["2024.8.16", "2024.7.28"],
+                  kind: ["大会报告", "论坛报告"],
+                  location: ["西南交通大学九里校区", "山东省泰安市泰山宝盛大酒店"],
+                  imgLink: "/static/imgs/城市大数据和AI大模型的探索与思考.png",
+                  description: "摘要：AI大模型在自然语言处理和视频生成领域取得了突破性进展，掀起了全球关注的热潮。大模型在数字城市领域的应用虽引起了极大的关注，但尚处于探索期，需要克服以下挑战才有可能真正产生价值。首先，较为完备且可互认的城市大数据是训练模型的基础。其次，选择正确合理的应用场景开展研究，很多场景并不适合使用大模型。再者，充分考虑城市数据的时空特性和多源数据的融合以及行业知识的融入。本报告分析了大模型在数字城市领域面临的挑战和不足，探讨如何构建城市中的数据基础，选择合适的场景，并提出一套AI大模型的计算框架，希望能为正确合理的使用大模型提供参考思路。"
+                },
+                {
+                  title: "城市计算：释放城市数据要素价值",
+                  link: ["https://cs.bit.edu.cn/xyxw/ce325cd1afab4b0182f3804401f293dd.htm", "https://www.ccf.org.cn/Chapters/TC/News_/2024-08-13/829398.shtml"],
+                  author: ["“21世纪学科前沿”系列学术报告", "CCF BIGDATA 2024"],
+                  pptLink: ["./static/ppt/20241109-城市计算-释放城市数据要素价值-激发城市新质生产力-40min.pdf", ""],
+                  date: ["2024.11.9", "2024.8.9"],
+                  kind: ["学术报告", "大会报告"],
+                  location: ["北京理工大学中关村校区", "山东省青岛市李沧华邑酒店"],
+                  imgLink: "/static/imgs/城市计算.png",
+                  description: "摘要：城市计算以数据为中心构建智慧城市技术体系，通过城市感知、数据管理、数据分析和服务提供四大共性环节，构建形态各异的上层应用，应对城市业务的不断演进。基于城市计算理论体系打造的城市操作系统包括全域感知、高效管理、智能引擎、跨域学习、数字孪生和城市知识体系等核心能力，可为数字中国战略提供数字基础设施，自动形成与应用分离、可共享的数据资源体系。城市操作系统作为雄安等十余个城市的数字底座，实现了城市数据一网共享，支撑了南通、上海普陀等城市的城市治理一网统管，以及首都的政府运行一网协同系统。本报告介绍从城市计算理论体系到城市操作系统的产品研发、再到其产业实践的过程，分享其中的科学问题、关键技术和落地案例。"
+                },
+              ]
+            }
+          ];
+
+          function renderPPT(data) {
+            const pptContainer = document.querySelector(".new ul");
+            pptContainer.innerHTML = "";
+
+            let counter = 1;
+
+            data.forEach(section => {
+              section.items.forEach(item => {
+                const listItem = document.createElement("li");
+                listItem.classList.add("item");
+
+                const link = document.createElement("a");
+                link.classList.add("title");
+                link.innerHTML = `<span>${counter}</span>${item.title}`;
+
+                const mainDiv = document.createElement("div");
+                mainDiv.classList.add("main");
+
+                const imageDiv = document.createElement("div");
+                imageDiv.classList.add("image");
+
+                // 添加图片
+                const img = document.createElement("img");
+                img.src = item.imgLink;
+                img.alt = item.title;
+                imageDiv.appendChild(img);
+
+                const boxDiv = document.createElement("div");
+                boxDiv.classList.add("box");
+
+                const bodyDiv = document.createElement("div");
+                bodyDiv.classList.add("body");
+
+                const msgDiv = document.createElement("div");
+                msgDiv.classList.add("msg");
+
+                // 遍历成组数据
+                item.author.forEach((author, index) => {
+                  const groupDiv = document.createElement("div");
+                  groupDiv.classList.add("group");
+                  // 构建PPT部分，仅在pptLink非空时渲染
+                  const pptHTML = item.pptLink[index]
+                  groupDiv.innerHTML += `
+                        <div class="author"><a href="${item.link[index]}" target="_blank">${author}</a></div>
+                        <div class="place">${item.location[index]}</div>
+                        <div class="type">${item.kind[index]}</div>
+                        <div class="date">${item.date[index]}</div>
+                    `;
+                  // 如果pptLink存在，渲染PPT链接，并且加上class="ppt"
+                  if (item.pptLink[index]) {
+                    groupDiv.innerHTML += `<div class="ppt"><a href="${item.pptLink[index]}" target="_blank">PPT</a></div>`;
+                  } else {
+                    // 如果没有pptLink，仍然显示PPT区域，但不应用class="ppt"样式
+                    groupDiv.innerHTML += `<div class="no-ppt">PPT</div>`;
+                  }
+                  // 逐组添加到 msgDiv 中
+                  msgDiv.appendChild(groupDiv);
+                });
+                // <div class="ppt"><a href="${item.pptLink[index]}" target="_blank">PPT</a></div>
+                bodyDiv.appendChild(msgDiv);
+
+                // 摘要
+                const abstractDiv = document.createElement("div");
+                abstractDiv.classList.add("abstract");
+                abstractDiv.innerHTML = `<p>${item.description}</p>`;
+
+                boxDiv.appendChild(bodyDiv);
+                boxDiv.appendChild(abstractDiv);
+
+                mainDiv.appendChild(imageDiv);
+                mainDiv.appendChild(boxDiv);
+
+                listItem.appendChild(link);
+                listItem.appendChild(mainDiv);
+
+                pptContainer.appendChild(listItem);
+
+                counter++; // 编号递增
+              });
+            });
+          }
+
+          renderPPT(pptData);
+        });
+
+
+        // 页面加载完成后调用封装的函数
+        document.addEventListener("DOMContentLoaded", initMenuNavigation);
+      </script>
+</body>
+
+</html>
