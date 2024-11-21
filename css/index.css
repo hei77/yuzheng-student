@@ -586,6 +586,17 @@ body {
   display: flex;
   margin: 10px 0;
 }
+.category-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: #333;
+}
+
+.category-separator {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
 
 .new_article .item .name
 
