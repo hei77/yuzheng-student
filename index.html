@@ -181,24 +181,38 @@
         }
         document.addEventListener("DOMContentLoaded", () => {
           const data = [
-            { username: "数据科学家", authors: ["郑宇"], date: "2021", extraInfo: "17(12)", page: "43-49", link: "./static/articles/0. 数据科学家.pdf", source: "中国计算机学会通讯", type: "期刊论文", langType: 0 },
-            { username: "城市计算：用大数据和AI驱动智能城市", authors: ["郑宇"], date: "2018", extraInfo: "14(1)", page: "8-17", link: "./static/articles/1. 城市计算：用大数据和AI驱动智能城市，中国计算机学会通讯，2018.1.pdf", source: "中国计算机学会通讯", type: "期刊论文", langType: 0 },
-            { username: "智能城市操作系统", authors: ["郑宇"], date: "2020", extraInfo: "16(12)", page: "39-44", link: "./static/articles/2. 智能城市操作系统，中国计算机学会通讯，2020.12.pdf", source: "中国计算机学会通讯", type: "期刊论文", langType: 0 },
-            { username: "城市知识体系", authors: ["郑宇"], date: "2022", extraInfo: "48(1)", page: "1-16", link: "./static/articles/3. 城市知识体系_郑宇.pdf", source: "武汉大学学报·信息科学版", type: "期刊论文", langType: 0 },
-            { username: "城市感知体系", authors: ["郑宇"], date: "2024", extraInfo: "49(10)", page: "1770-1787", link: "./static/articles/4. 城市感知体系-武大学报.pdf", source: "武汉大学学报·信息科学版", type: "期刊论文", langType: 0 },
-            { username: "基于城市知识体系的公共数据要素构建技术", authors: ["郑宇, 易修文, 齐德康, 等"], date: "2024", extraInfo: "10(4)", page: "130-148", link: "./static/articles/5. 基于城市知识体系的公共数据要素构建技术-2024-07-15-24077.pdf", source: "大数据", type: "期刊论文", langType: 0 },
-            { username: "城市治理一网统管", authors: ["郑宇"], date: "2022", extraInfo: "47(1)", page: "19-25", link: "./static/articles/6. 城市治理一网统管.pdf", source: "武汉大学学报·信息科学版", type: "期刊论文", langType: 0 },
-            { username: "政民互通：构建政府和居民之间的双向信息通道", authors: ["郑宇"], date: "2024", extraInfo: "10(1)", page: "127-140", link: "./static/articles/7. 政民互通：构建政府和居民之间的双向信息通道-Big Data Research.pdf", source: "大数据", type: "期刊论文", langType: 0 },
-            { username: "Detecting collective anomalies from multiple spatio-temporal datasets across different domains", authors: ["Yu Zheng, Huichu Zhang, Yong Yu"], date: "2015", extraInfo: "10(1)", page: "127-140", link: "./static/articles/Collective anomalies-GIS2015_yu.pdf", source: "ACM SIGSPATIAL 2015", type: "Conference Paper", ppt: "https://example.com/ppt1", langType: 1 },
-            { username: "Diagnosing New York city's noises with ubiquitous data", authors: ["Yu Zheng, Tong Liu, Yilun Wang,et al"], date: "2014", link: "./static/articles/Diagnosing NYC's noise using ubiquitious data-yu.pdf", source: "UbiComp 2014", type: "Conference Paper", ppt: "https://example.com/ppt2", langType: 1 },
-            { username: "Driving with knowledge from the physical world", authors: ["Jing Yuan, Yu Zheng, Xing Xie,et al"], date: "2011", link: "./static/articles/Driving with Knowledge from the Physical World-kdd11.pdf", source: "KDD 2011", type: "Conference Paper", ppt: "https://example.com/ppt3", langType: 1 },
-            { username: "Forecasting fine-grained air quality based on big data", authors: ["Yu Zheng, Xiuwen Yi, Ming Li,et al"], date: "2015", link: "./static/articles/Forecasting air qualtiy-kdd2015-camera-ready.pdf", source: "KDD 2015", type: "Conference Paper", ppt: "https://example.com/ppt4" },
-            { username: "Inferring gas consumption and pollution emission of vehicles throughout a city", authors: ["Jingbo Shang, Yu Zheng, Wenzhu Tong,et al"], date: "2014", link: "./static/articles/frp0542-zheng-final.pdf", source: "KDD 2014", type: "Conference Paper", ppt: "https://example.com/ppt5", langType: 1 },
-            { username: "Travel time estimation of a path using sparse trajectories", authors: ["Yilun Wang, Yu Zheng, Yexiang Xue"], date: "2014", link: "./static/articles/frp0557-zheng1.pdf", source: "KDD 2014", type: "Conference Paper", ppt: "https://example.com/ppt6", langType: 1 },
-            { username: "U-air: When urban air quality inference meets big data", authors: ["Yu Zheng, Furui Liu, Hsun-Ping Hsieh"], date: "2013", link: "./static/articles/kdd51-zheng.pdf", source: "KDD 2013", type: "Conference Paper", ppt: "https://example.com/ppt7", langType: 1 },
-            { username: "Discovering regions of different functions in a city using human mobility and POIs", authors: ["Jing Yuan, Yu Zheng, Xing Xie"], date: "2012", link: "./static/articles/kdd2012_functional regions.pdf", source: "KDD 2012", type: "Conference Paper", ppt: "https://example.com/ppt8", langType: 1 },
-            { username: "Methodologies for cross-domain data fusion: An overview", authors: ["Yu Zheng"], date: "2015", extraInfo: "1(1)", page: "16-34", link: "./static/articles/Methods for Cross-Domain Data fusion.pdf", source: "IEEE TBD", type: "Journal Paper", langType: 1 },
-            { username: "Trajectory data mining: an overview", authors: ["Yu Zheng"], date: "2015", extraInfo: "6(3)", page: "1-41", link: "./static/articles/TrajectoryDataMining-tist-yuzheng.pdf", source: "ACM TIST", type: "Journal Paper", langType: 1 },
+            { username: "what-why-how-why方法论", authors: ["郑宇"], date: "2024", link: "./static/articles/0-0-what-why-how-why方法论.pptx", ppt: "./static/articles/0-0-what-why-how-why方法论.pptx",type: "方法论",langType: 0 },
+            { username: "《数据科学家》", authors: ["郑宇"], date: "2021", extraInfo: "17(12)", page: "43-49", link: "./static/articles/0-1-数据科学家-CCCF-郑宇.pdf", source: "中国计算机学会通讯", type: "期刊论文", langType: 0 },
+            { username: "《城市计算：用大数据和AI驱动智能城市》", authors: ["郑宇"], date: "2018", extraInfo: "14(1)", page: "8-17", link: "./static/articles/0-2-城市计算：用大数据和AI驱动智能城市，中国计算机学会通讯，2018.1.pdf", source: "中国计算机学会通讯", type: "期刊论文", langType: 0 },
+            { username: "Urban computing: concepts, methodologies, and applications", authors: ["Yu Zheng, Licia Capra, Ouri Wolfson, et al"], date: "2014", extraInfo: "5(3)", page: "1-55", link: "./static/articles/0-3-UrbanComputing-zheng-tist2014.pdf", source: "ACM TIST", type: "Journal Paper", langType: 1 },
+            { username: "《智能城市操作系统》", authors: ["郑宇"], date: "2020", extraInfo: "16(12)", page: "39-44", link: "./static/articles/0-4-智能城市操作系统，中国计算机学会通讯，2020.12.pdf", source: "中国计算机学会通讯", type: "期刊论文", langType: 0 },
+            { username: "《城市感知体系》", authors: ["郑宇"], date: "2024", extraInfo: "49(10)", page: "1770-1787", link: "./static/articles/1-0-城市感知体系-武大学报.pdf", source: "武汉大学学报·信息科学版", type: "期刊论文", langType: 0 },
+            { username: "Understanding mobility based on GPS data", authors: ["Yu Zheng, Quannan Li, Yukun Chen, et al"], date: "2008", link: "./static/articles/1-2-Understanding Mobility Based on GPS Data.pdf", source: "Ubicomp 2008", type: "Conference Paper", langType: 1 },
+            { username: "Urban computing with taxicabs", authors: ["Yu Zheng, Yanchi Liu, Jing Yuan, et al"], date: "2011", link: "./static/articles/1-3-Urban Computing with Taxicabs.pdf", source: "Ubicomp 2011", type: "Conference Paper", langType: 1 },
+            { username: "ST-MVL: Filling missing values in geo-sensory time series data", authors: ["Xiuwen Yi, Yu Zheng, Junbo Zhang, et al"], date: "2016", link: "./static/articles/1-4-IJCAI-16-fill missing values-Yu Zheng.pdf", source: "IJCAI 2016", type: "Conference Paper", langType: 1 },
+            { username: "Trajectory data mining: an overview", authors: ["Yu Zheng"], date: "2015", extraInfo: "6(3)", page: "1-41", link: "./static/articles/2-0-TrajectoryDataMining-tist-yuzheng.pdf", source: "ACM TIST", type: "Journal Paper", langType: 1 },
+            { username: "Mining interesting locations and travel sequences from GPS trajectories", authors: ["Yu Zheng, Lizhu Zhang, Xing Xie, et al"], date: "2009", link: "./static/articles/2-1-Mining Interesting Locations and Travel Sequences from.pdf", source: "WWW 2009", type: "Conference Paper", langType: 1 },
+            { username: "Map-matching for low-sampling-rate GPS trajectories", authors: ["Yin Lou, Chengyang Zhang, Yu Zheng, et al"], date: "2009", link: "./static/articles/2-2-Map-Matching for Low-Sampling-Rate GPS Trajectories-cameraReady.pdf", source: "ACM SIGSPATIAL GIS 2009", type: "Conference Paper", langType: 1 },
+            { username: "Real-time city-scale taxi ridesharing", authors: ["Shuo Ma, Yu Zheng, Ouri Wolfson, et al"], date: "2014", extraInfo: "27(7)", page: "1782-1795", link: "./static/articles/2-3-T-sharing.pdf", source: "IEEE TKDE", type: "Journal Paper", langType: 1 },
+            { username: "Mining user similarity based on location history", authors: ["Quannan Li, Yu Zheng, Xing Xie, et al"], date: "2008", link: "./static/articles/2-4-Mining user similarity based on location history.pdf", source: "ACM SIGSPATIAL GIS 2008", type: "Conference Paper", langType: 1 },
+            { username: "Reducing uncertainty of low-sampling-rate trajectories", authors: ["Kai Zheng, Yu Zheng, Xing Xie, et al"], date: "2012", link: "./static/articles/2-5-Reducing Uncertainty of Low-Sampling-Rate trajectories.pdf", source: "ICDE 2012", type: "Conference Paper", langType: 1 },
+            { username: "Constructing popular routes from uncertain trajectories", authors: ["Ling-Yin Wei, Yu Zheng, Wen-Chih Peng, et al"], date: "2012", link: "./static/articles/2-6-KDD12-PopularRoutes.pdf", source: "KDD 2012", type: "Conference Paper", langType: 1 },
+            { username: "Driving with knowledge from the physical world", authors: ["Jing Yuan, Yu Zheng, Xing Xie,et al"], date: "2011", link: "./static/articles/2-7-Driving with Knowledge from the Physical World-kdd11.pdf", source: "KDD 2011", type: "Conference Paper", ppt: "https://example.com/ppt3", langType: 1 },
+            { username: "Methodologies for cross-domain data fusion: An overview", authors: ["Yu Zheng"], date: "2015", extraInfo: "1(1)", page: "16-34", link: "./static/articles/3-0-Methods for Cross-Domain Data fusion.pdf", source: "IEEE TBD", type: "Journal Paper", langType: 1 },
+            { username: "Discovering regions of different functions in a city using human mobility and POIs", authors: ["Jing Yuan, Yu Zheng, Xing Xie"], date: "2012", link: "./static/articles/3-1-kdd2012_functional regions.pdf", source: "KDD 2012", type: "Conference Paper", ppt: "https://example.com/ppt8", langType: 1 },
+            { username: "U-air: When urban air quality inference meets big data", authors: ["Yu Zheng, Furui Liu, Hsun-Ping Hsieh"], date: "2013", link: "./static/articles/3-2-U-Air When Urban Air Quality Inference Meets Big Data.pdf", source: "KDD 2013", type: "Conference Paper", ppt: "https://example.com/ppt7", langType: 1 },
+            { username: "Forecasting fine-grained air quality based on big data", authors: ["Yu Zheng, Xiuwen Yi, Ming Li, et al"], date: "2015", link: "./static/articles/3-3-Forecasting air qualtiy-kdd2015-camera-ready.pdf", source: "KDD 2015", type: "Conference Paper", ppt: "https://example.com/ppt4" },
+            { username: "Inferring gas consumption and pollution emission of vehicles throughout a city", authors: ["Jingbo Shang, Yu Zheng, Wenzhu Tong,et al"], date: "2014", link: "./static/articles/3-4-Inferring Gas Consumption and Pollution Emissions of.pdf", source: "KDD 2014", type: "Conference Paper", ppt: "https://example.com/ppt5", langType: 1 },
+            { username: "Travel time estimation of a path using sparse trajectories", authors: ["Yilun Wang, Yu Zheng, Yexiang Xue"], date: "2014", link: "./static/articles/3-5-Travel Time Estimation of a Path using Sparse Trajectories.pdf", source: "KDD 2014", type: "Conference Paper", ppt: "https://example.com/ppt6", langType: 1 },
+            { username: "Diagnosing New York city's noises with ubiquitous data", authors: ["Yu Zheng, Tong Liu, Yilun Wang,et al"], date: "2014", link: "./static/articles/3-6-Diagnosing NYC's noise using ubiquitious data-yu.pdf", source: "UbiComp 2014", type: "Conference Paper", ppt: "https://example.com/ppt2", langType: 1 },
+            { username: "Detecting collective anomalies from multiple spatio-temporal datasets across different domains", authors: ["Yu Zheng, Huichu Zhang, Yong Yu"], date: "2015", extraInfo: "10(1)", page: "127-140", link: "./static/articles/3-7-Collective anomalies-GIS2015_yu.pdf", source: "ACM SIGSPATIAL 2015", type: "Conference Paper", ppt: "https://example.com/ppt1", langType: 1 },
+            { username: "Deep spatio-temporal residual networks for citywide crowd flows prediction", authors: ["Junbo Zhang, Yu Zheng, Dekang Qi, et al"], date: "2017", link: "./static/articles/3-8-ResNet-AAAI17-Zheng.pdf", source: "AAAI 2017", type: "Conference Paper", langType: 1 },
+            { username: "《城市知识体系》", authors: ["郑宇"], date: "2022", extraInfo: "48(1)", page: "1-16", link: "./static/articles/4-0-城市知识体系_郑宇.pdf", source: "武汉大学学报·信息科学版", type: "期刊论文", langType: 0 },
+            { username: "《政民互通：构建政府和居民之间的双向信息通道》", authors: ["郑宇"], date: "2024", extraInfo: "10(1)", page: "127-140", link: "./static/articles/4-1. 政民互通：构建政府和居民之间的双向信息通道-Big Data Research.pdf", source: "大数据", type: "期刊论文", langType: 0 },
+            { username: "《基于城市知识体系的公共数据要素构建技术》", authors: ["郑宇, 易修文, 齐德康, 等"], date: "2024", extraInfo: "10(4)", page: "130-148", link: "./static/articles/4-2. 基于城市知识体系的公共数据要素构建技术-2024-07-15-24077.pdf", source: "大数据", type: "期刊论文", langType: 0 },
+            { username: "《公共数据的产权运行机制与技术方案》", authors: ["郑宇"], date: "2024", extraInfo: "10(5)", page: "138-150", link: "./static/articles/4-3-公共数据的产权运行机制与技术方案-郑宇-预发表.pdf", source: "大数据", type: "期刊论文", langType: 0 },
+            { username: "《城市治理一网统管》", authors: ["郑宇"], date: "2022", extraInfo: "47(1)", page: "19-25", link: "./static/articles/5-1. 城市治理一网统管.pdf", source: "武汉大学学报·信息科学版", type: "期刊论文", langType: 0 },
+
           ];
           const toolbar = document.getElementById("article-toolbar");
           const articleTab = document.getElementById("nav-article");
@@ -227,6 +241,28 @@
               return yearB - yearA;
             });
           }
+          // 按 username 英文优先排序（处理标点符号）
+          function sortByUsername(data) {
+            return [...data].sort((a, b) => {
+              const cleanString = (str) =>
+                str.replace(/[《》:：\s]/g, "").toLowerCase();
+
+              const isChinese = (str) => /^[\u4e00-\u9fa5]/.test(str);
+
+              const aUsername = cleanString(a.username);
+              const bUsername = cleanString(b.username);
+
+              const aIsChinese = isChinese(aUsername);
+              const bIsChinese = isChinese(bUsername);
+
+              if (!aIsChinese && bIsChinese) return -1;
+              if (aIsChinese && !bIsChinese) return 1;
+
+              // 中文直接按字典序排序
+              return aUsername.localeCompare(bUsername, "zh");
+            });
+          }
+
 
           // 按中英文排序（中文在前）
           function sortByLanguage(data) {
@@ -270,7 +306,7 @@
     </div>
     <div class="main">
       <div class="row">
-        <div class="name">${item.source}</div>
+        <div class="name">${item.source || ''}</div>
         <div class="num">${item.extraInfo || ''}</div>
         <div class="page">${item.page || ''}</div>
         <div class="year">${dateInfo}</div>
@@ -293,7 +329,7 @@
 
           // 按钮绑定事件
           document.getElementById("sort-by-date").addEventListener("click", () => renderList(sortByDate(data)));
-          document.getElementById("sort-by-language").addEventListener("click", () => renderList(sortByLanguage(data)));
+          document.getElementById("sort-by-language").addEventListener("click", () => renderList(sortByUsername(data)));
           document.getElementById("sort-by-recommendation").addEventListener("click", () => renderList(data)); // 默认顺序
         });
 
@@ -453,7 +489,7 @@
                   date: ["2024.10.18", "2024.9.25"],
                   kind: ["专题讲座", "专题讲座"],
                   location: ["西南交通大学九里校区", "西南交通大学犀浦校区"],
-                  imgLink: "./static/imgs/规划精彩大学生涯，锻造科技强国人才.png",
+                  imgLink: "/static/imgs/规划精彩大学生涯，锻造科技强国人才.png",
                   description: "摘要：面向科技背景的本科生、研究生和博士生。探讨本科、硕士、博士和工作初期大家可能遇到的困惑，基于对个人成长经历的思考，为大家提供借鉴。通过科研实践和社团活动等多种方式，培养综合实力，提升认知能力、创新能力、沟通能力、组织能力等，最终成为一名有情怀，有理想有能力的科技人才，为中华民族的伟大复兴助力。"
                 },
                 {
@@ -464,7 +500,7 @@
                   date: ["2024.9.21"],
                   kind: ["论坛报告"],
                   location: ["北京交通大学科学会堂"],
-                  imgLink: "./static/imgs/数据科学家.png",
+                  imgLink: "/static/imgs/数据科学家.png",
                   description: "摘要：“AI+交通”，这一创新的组合正重塑着交通行业的未来。从智能交通管理到自动驾驶技术，从交通大数据分析到交通设施的智能化运维，如何培养出既精通人工智能技术，又熟悉交通行业需求的复合型人才，是我们亟待解决的重要课题。"
                 },
                 {
@@ -475,7 +511,7 @@
                   date: ["2024.8.16", "2024.7.28"],
                   kind: ["大会报告", "论坛报告"],
                   location: ["西南交通大学九里校区", "山东省泰安市泰山宝盛大酒店"],
-                  imgLink: "./static/imgs/城市大数据和AI大模型的探索与思考.png",
+                  imgLink: "/static/imgs/城市大数据和AI大模型的探索与思考.png",
                   description: "摘要：AI大模型在自然语言处理和视频生成领域取得了突破性进展，掀起了全球关注的热潮。大模型在数字城市领域的应用虽引起了极大的关注，但尚处于探索期，需要克服以下挑战才有可能真正产生价值。首先，较为完备且可互认的城市大数据是训练模型的基础。其次，选择正确合理的应用场景开展研究，很多场景并不适合使用大模型。再者，充分考虑城市数据的时空特性和多源数据的融合以及行业知识的融入。本报告分析了大模型在数字城市领域面临的挑战和不足，探讨如何构建城市中的数据基础，选择合适的场景，并提出一套AI大模型的计算框架，希望能为正确合理的使用大模型提供参考思路。"
                 },
                 {
@@ -486,7 +522,7 @@
                   date: ["2024.11.9", "2024.8.9"],
                   kind: ["学术报告", "大会报告"],
                   location: ["北京理工大学中关村校区", "山东省青岛市李沧华邑酒店"],
-                  imgLink: "./static/imgs/城市计算.png",
+                  imgLink: "/static/imgs/城市计算.png",
                   description: "摘要：城市计算以数据为中心构建智慧城市技术体系，通过城市感知、数据管理、数据分析和服务提供四大共性环节，构建形态各异的上层应用，应对城市业务的不断演进。基于城市计算理论体系打造的城市操作系统包括全域感知、高效管理、智能引擎、跨域学习、数字孪生和城市知识体系等核心能力，可为数字中国战略提供数字基础设施，自动形成与应用分离、可共享的数据资源体系。城市操作系统作为雄安等十余个城市的数字底座，实现了城市数据一网共享，支撑了南通、上海普陀等城市的城市治理一网统管，以及首都的政府运行一网协同系统。本报告介绍从城市计算理论体系到城市操作系统的产品研发、再到其产业实践的过程，分享其中的科学问题、关键技术和落地案例。"
                 },
               ]
@@ -543,7 +579,7 @@
                     `;
                   // 如果pptLink存在，渲染PPT链接，并且加上class="ppt"
                   if (item.pptLink[index]) {
-                    groupDiv.innerHTML += `<div class="ppt"><a href="${item.pptLink[index]}" download target="_blank">PPT</a></div>`;
+                    groupDiv.innerHTML += `<div class="ppt"><a href="${item.pptLink[index]}" target="_blank">PPT</a></div>`;
                   } else {
                     // 如果没有pptLink，仍然显示PPT区域，但不应用class="ppt"样式
                     groupDiv.innerHTML += `<div class="no-ppt">PPT</div>`;
