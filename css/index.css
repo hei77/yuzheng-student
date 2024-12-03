@@ -418,6 +418,7 @@ body {
   /* 下面调整必看报告的宽度 */
   width: 100%;
   max-width: 1200px;
+  min-width: 900px;
 }
 
 .new .item .title {
