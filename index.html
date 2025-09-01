@@ -192,7 +192,7 @@
             { index: "0-4", username: "Urban computing: concepts, methodologies, and applications", authors: ["Yu Zheng, Licia Capra, Ouri Wolfson, et al"], date: "2014", extraInfo: "5(3)", page: "1-55", link: "./static/articles/0-3-UrbanComputing-zheng-tist2014.pdf", source: "ACM TIST", type: "Journal Paper", langType: 1 },
             { index: "0-5", username: "《智能城市操作系统》", authors: ["郑宇"], date: "2020", extraInfo: "16(12)", page: "39-44", link: "./static/articles/0-4-智能城市操作系统，中国计算机学会通讯，2020.12.pdf", source: "中国计算机学会通讯", type: "期刊论文", langType: 0 },
             { index: "1-1", username: "《城市感知体系》", authors: ["郑宇"], date: "2024", extraInfo: "49(10)", page: "1770-1787", link: "./static/articles/1-0-城市感知体系-武大学报.pdf", source: "武汉大学学报·信息科学版", type: "期刊论文", langType: 0 },
-            { index: "1-2", username: "Understanding mobility based on GPS data", authors: ["Yu Zheng, Quannan Li, Yukun Chen, et al"], date: "2008", link: "./static/articles/1-2-Understanding Mobility Based on GPS Data.pdf", source: "Ubicomp 2008", type: "Conference Paper",ppt:"http://urban-computing.com/index-890.htm", langType: 1 },
+            { index: "1-2", username: "Understanding mobility based on GPS data", authors: ["Yu Zheng, Quannan Li, Yukun Chen, et al"], date: "2008", link: "./static/articles/1-2-Understanding Mobility Based on GPS Data.pdf", source: "Ubicomp 2008", type: "Conference Paper",ppt:"http://urban-computing.com/index-890.htm", journalVersion: "./static/articles/1-2-2-Understand20transporation20mode20based20on20GPS20data20for20Web20applications-published.pdf", langType: 1 },
             { index: "1-3", username: "Urban computing with taxicabs", authors: ["Yu Zheng, Yanchi Liu, Jing Yuan, et al"], date: "2011", link: "./static/articles/1-3-Urban Computing with Taxicabs.pdf", source: "Ubicomp 2011", type: "Conference Paper",ppt:"http://urban-computing.com/index-68.htm", langType: 1 },
             { index: "1-4", username: "ST-MVL: Filling missing values in geo-sensory time series data", authors: ["Xiuwen Yi, Yu Zheng, Junbo Zhang, et al"], date: "2016", link: "./static/articles/1-4-IJCAI-16-fill missing values-Yu Zheng.pdf", source: "IJCAI 2016", type: "Conference Paper",ppt:"http://urban-computing.com/index-848.htm", langType: 1 },
             { index: "2-1", username: "Trajectory data mining: an overview", authors: ["Yu Zheng"], date: "2015", extraInfo: "6(3)", page: "1-41", link: "./static/articles/2-0-TrajectoryDataMining-tist-yuzheng.pdf", source: "ACM TIST", type: "Journal Paper", langType: 1 },
@@ -325,6 +325,10 @@
                     ? `<a href="${item.ppt}" target="_blank" style="color:#0060ac; text-decoration: none;">PPT</a>`
                     : "";
 
+                  const journalVersionHtml = item.journalVersion//Ubicomp2008补丁
+                    ? `<a href="${item.journalVersion}" target="_blank" style="color:#0060ac; text-decoration: none;">[Journal Version on TWEB]</a>`
+                    : "";
+
                   listItem.innerHTML = `
           <span>${item.index.split("-")[1]}</span>
           <div class="body">
@@ -335,7 +339,7 @@
             </div>
             <div class="main">
               <div class="row">
-                <div class="name">${item.source || ""}</div>
+                <div class="name">${item.source || ""} ${journalVersionHtml}</div>
                 <div class="num">${item.extraInfo || ""}</div>
                 <div class="page">${item.page || ""}</div>
                 <div class="year">${item.date}</div>
@@ -381,6 +385,11 @@
               const pptHtml = item.ppt
                 ? `<a href="${item.ppt}" target="_blank" style="color:#0060ac; text-decoration: none;">PPT</a>`
                 : "";
+              
+              const journalVersionHtml = item.journalVersion
+                ? `<a href="${item.journalVersion}" target="_blank" style="color:#0060ac; text-decoration: none;">[Journal Version on TWEB]</a>`
+                : "";
+              
               listItem.innerHTML = `
   <span>${useOriginalIndex ? item.index : index + 1}</span>
   <div class="body">
@@ -391,7 +400,7 @@
     </div>
     <div class="main">
       <div class="row">
-        <div class="name">${item.source || ''}</div>
+        <div class="name">${item.source || ''} ${journalVersionHtml}</div>
         <div class="num">${item.extraInfo || ''}</div>
         <div class="page">${item.page || ''}</div>
         <div class="year">${dateInfo}</div>
